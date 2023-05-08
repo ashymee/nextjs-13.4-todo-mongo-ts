@@ -14,14 +14,14 @@ create container
 
 ```bash
 docker run \
-			-d \
-      -n local-mongo \
-      -e MONGO_INITDB_ROOT_USERNAME=[username] \
-      -e MONGO_INITDB_ROOT_PASSWORD=[password] \
-      -p 27017:27017 \
-      -v mongo-data:/data/db \
-      --restart always \
-      mongodb/mongodb-community-server:latest
+  -d \
+  -n local-mongo \
+  -e MONGO_INITDB_ROOT_USERNAME=[username] \
+  -e MONGO_INITDB_ROOT_PASSWORD=[password] \
+  -p 27017:27017 \
+  -v mongo-data:/data/db \
+  --restart always \
+  mongodb/mongodb-community-server:latest
 ```
 
 create `.env.local` and use uri below:
