@@ -13,6 +13,7 @@ docker pull mongodb/mongodb-community-server
 create container
 
 ```bash
+docker run \
 			-d \
       -n local-mongo \
       -e MONGO_INITDB_ROOT_USERNAME=[username] \
